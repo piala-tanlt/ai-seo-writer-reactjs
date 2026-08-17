@@ -19,12 +19,6 @@ export default function RegisterForm({
         <div className="page">
             <div className="auth-card">
                 <div class="auth-card-inner">
-                <button
-                    className="back-link"
-                    type="button"
-                >
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg> サインインに戻る
-                </button>
 
                 <Brand
                     title="アカウント"
@@ -79,11 +73,6 @@ export default function RegisterForm({
                         )
                     }
                 />
-
-                <div class="info-box">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-        <span>登録後、仮パスワードをメールでお送りします。ログイン後にパスワードを変更してください。</span>
-      </div>
 
                 <Button
                     loading={loading}
