@@ -1,9 +1,7 @@
 import RegisterForm from "../../components/auth/RegisterForm";
 import RegisterSuccess from "../../components/auth/RegisterSuccess";
 import useRegister from "../../hooks/useRegister";
-
 export default function Register() {
-
     const {
         form = {
             name: "",
@@ -18,7 +16,6 @@ export default function Register() {
         handleSubmit,
         resend
     } = useRegister();
-
     if (success) {
         return (
             <RegisterSuccess
@@ -30,7 +27,6 @@ export default function Register() {
             />
         );
     }
-
     return (
         <RegisterForm
             form={form}

@@ -10,17 +10,14 @@ export default function Input({
     inputRef,
     error
 }) {
-
     return (
         <div className="form-group">
-
             <label
                 className="form-label"
                 htmlFor={id}
             >
                 {label}
             </label>
-
             <input
                 ref={inputRef}
                 id={id}
@@ -34,7 +31,6 @@ export default function Input({
                 onChange={onChange}
                 onKeyDown={onKeyDown}
             />
-
         </div>
     );
 }
